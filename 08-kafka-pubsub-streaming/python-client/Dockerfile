@@ -1,4 +1,4 @@
-FROM --platform=amd64 python:3.8-alpine
+FROM --platform=amd64 python:3.14.2-alpine
 RUN pip install kafka-python Faker
 ENV ACTION produce
 ENV BOOTSTRAP_SERVERS "broker-1:29091,broker-2:29092,broker-3:29093"
